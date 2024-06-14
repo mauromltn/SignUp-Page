@@ -58,13 +58,14 @@ section p {
 
 /* FORM */
 section input:not([type="submit"]) {
-    margin-bottom: 20px;
     width: 350px;
     height: 35px;
+    margin-bottom: 20px;
     padding-left: 10px;
+    color: var(--primary-text-color);
     border: 1px solid var(--border-color);
+    border-radius: 7px;
     background-color: var(--secondary-color);
-    border-radius: 8px;
 }
 
 section #name, #lastname {
@@ -72,18 +73,19 @@ section #name, #lastname {
 }
 
 section #submit {
-    border: none;
-    border-radius: 7px;
-    width: 110px;
+    width: 100%;
     height: 40px;
     font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
     background-color: #222222;
     color: var(--primary-text-color);
-    font-weight: bold;
 }
 
 section #submit:hover {
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
+    border: none;
     background-color: #f2f2f2;
     color: var(--secondary-text-color);
 }
@@ -105,12 +107,5 @@ section #submit:hover {
 
     section #name, #lastname {
         width: 48.7%;
-    }
-
-    section #submit {
-        display: block;
-        margin: 0 auto;
-        height: 30px;
-        width: 90px;
     }
 }
