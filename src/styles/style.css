@@ -45,8 +45,8 @@ section {
 }
 
 section h1 {
-
     font-size: 30px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -86,4 +86,31 @@ section #submit:hover {
     transition: .2s ease-in-out;
     background-color: #f2f2f2;
     color: var(--secondary-text-color);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    section {
+        width: 320px;
+        padding: 20px 20px;
+    }
+
+    section h1 {
+        font-size: 24px;
+    }
+
+    section input:not([type="submit"]) {
+        width: 100%;
+    }
+
+    section #name, #lastname {
+        width: 48.7%;
+    }
+
+    section #submit {
+        display: block;
+        margin: 0 auto;
+        height: 30px;
+        width: 90px;
+    }
 }
