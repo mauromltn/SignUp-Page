@@ -1,49 +1,74 @@
 :root {
+    --primary-color: rgba(0, 0, 0, 0.4);
+    --secondary-color: rgba(0, 0, 0, 0.3);
+    --border-color: rgba(255, 255, 255, 0.1);
     --background: rgba(255, 255, 255, 0.06);
     --primary-text-color: #f2f2f2;
     --secondary-text-color: #222222;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    border: none;
+}
+
+/* BDOY */
+body {
     background-image: url('../../images/background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: var(--primary-text-color);
 }
 
+/* MAIN */
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    height: 100vh;
 }
 
+/* CARD */
 section {
     padding: 20px 40px;
-    border: solid 1px #222222;
+    border: solid 1px var(--border-color);
     border-radius: 20px;
     background: transparent;
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.01);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: var(--primary-color);
 }
 
-section label {
-    padding: 0 5px;
+section h1 {
+
+    font-size: 30px;
+    text-align: center;
 }
 
-section #email, #password {
+section p {
+    margin-bottom: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* FORM */
+section input:not([type="submit"]) {
     margin-bottom: 20px;
     width: 350px;
     height: 35px;
-    border: none;
-    background-color: var(--background);
+    padding-left: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
     border-radius: 8px;
+}
+
+section #name, #lastname {
+    width: 170px;
 }
 
 section #submit {
@@ -62,5 +87,3 @@ section #submit:hover {
     background-color: #f2f2f2;
     color: var(--secondary-text-color);
 }
-
-/* ADD COMMENTS */
