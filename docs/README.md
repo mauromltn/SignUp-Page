@@ -2,8 +2,8 @@
 
 ## 📆 To-Do
 - [ ] Image and Icon
-- [ ] Form
-- [ ] Style
+- [X] Form
+- [X] Style
 - [ ] Responsiveness
 
 ## ⚡ Tech
