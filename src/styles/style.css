@@ -77,33 +77,34 @@ section #submit {
     height: 40px;
     font-size: 15px;
     font-weight: bold;
-    border: none;
+    color: var(--secondary-text-color);
+    background-color: #fff;
+    border: 2px solid #fff;
     border-radius: 7px;
-    background-color: #222222;
-    color: var(--primary-text-color);
+    cursor: pointer;
+    transition: .2s ease-in-out;
 }
 
 section #submit:hover {
-    transition: .2s ease-in-out;
-    border: none;
-    background-color: #f2f2f2;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
+    background-color: transparent;
 }
 
-section #submit:active {
-    transition: none;
+*::selection {
+    color: #131313;
+    background-color: #f2f2f2;
 }
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
     section {
         width: 320px;
-        padding: 20px 20px;
+        padding: 20px;
     }
 
     section h1 {
         font-size: 24px;
-    }
+    }   
 
     section input:not([type="submit"]) {
         width: 100%;
